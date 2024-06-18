@@ -1,0 +1,487 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Стили для шапки */
+.header {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1900px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.logo .logo-image {
+  max-width: 250px;
+  height: auto;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+font-size: 17px;
+text-transform: uppercase;
+text-decoration: none;
+font-family: Arial Regular;
+}
+
+.user-action-link {
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .user-action-icon {
+    max-width: 24px;
+  }
+
+.header-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+.header-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.header-description {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+  
+
+
+
+ 
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .career-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Остальные стили остались без изменений */
+  
+
+
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .career-section, .block-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .career-content, .block-content {
+    flex-basis: 65%;
+    text-align: left;
+  }
+  
+  .career-title, .block-title {
+    font-family: Arial Regular;
+    color: #114090;
+    text-transform: uppercase;
+    
+  }
+  
+  .career-description, .block-description {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  
+  .career-button, .block-button {
+    display: inline-block;
+    background-color: #114090;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .career-image, .block-image {
+    flex-basis: 30%;
+  }
+  
+  .career-image img, .block-image img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Остальные стили для модального окна и формы остались без изменений */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    width: 30%;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group label {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .form-group input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    background-color: #114090;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color:#114090;
+  }
+
+
+
+
+
+
+
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    width: 60%;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .block-image {
+    max-width: 200px;
+    height: auto;
+    display: block;
+  }
+  
+  .zoom-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn {
+    background-color: #114090;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .btn-1 {
+    background-color: #114090;
+  }
+  
+  .btn-2 {
+    background-color: #114090;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    width: 30%;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  h3{
+    font-size: 21px;
+    font-family: Arial Regular;
+color: #114090;
+text-transform: uppercase;
+  }
+  .btn-blue {
+    background-color: #114090;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+     /* Стили для подвала */
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    footer {
+      background-color: #114090;
+      padding: 50px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .footer-container {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-left img {
+      max-width: 250px;
+    }
+
+    .footer-center {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-center a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10 35px;
+      flex-basis: 50%;
+      text-align: center;
+    }
+
+
+    .footer-center a:hover {
+      color: #ccc;
+    }
+
+    /* Стили для белых полосок */
+    .stripe {
+      width: 300px;
+      height: 200px;
+      background-color: #fff;
+      transform: skewX(-20deg);
+      position: absolute;
+    }
+
+    /* Позиции полосок */
+    .stripe:nth-child(1) {
+      left: 79%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(2) {
+      left: 30%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(3) {
+      left: 0%;
+      top: 30%;
+    }
+
+    .stripe:nth-child(4) {
+      left: 70%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(5) {
+      left: 90%;
+      top: 50%;
+    }

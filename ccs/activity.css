@@ -1,0 +1,312 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Стили для шапки */
+  .header {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .header-bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .logo .logo-image {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial Regular;
+  }
+  
+  .user-action-link {
+      display: inline-block;
+      color: #fff;
+    }
+    
+    .user-action-icon {
+      max-width: 24px;
+    }
+  
+  .header-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    text-align: left;
+  }
+  
+  .header-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .header-description {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+
+
+
+
+  h1 {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .square {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10px; /* 添加圆角 */
+  }
+  
+  .square img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .square p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    border-radius: 10px; /* 给弹出框添加圆角 */
+  }
+  
+  .popup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .popup-text {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Существующие стили */
+/* ... */
+
+.popup-text {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup-text input,
+  .popup-text textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup-text button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+ 
+
+
+
+
+     /* Стили для подвала */
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    footer {
+      background-color: #114490;
+      padding: 50px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .footer-container {
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-left img {
+      max-width: 250px;
+    }
+
+    .footer-center {
+      display: flex;
+      gap: 30px;
+    }
+
+    .footer-center a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10 35px;
+      flex-basis: 50%;
+      text-align: center;
+    }
+
+
+    .footer-center a:hover {
+      color: #ccc;
+    }
+
+    /* Стили для белых полосок */
+    .stripe {
+      width: 300px;
+      height: 200px;
+      background-color: #fff;
+      transform: skewX(-20deg);
+      position: absolute;
+    }
+
+    /* Позиции полосок */
+    .stripe:nth-child(1) {
+      left: 79%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(2) {
+      left: 30%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(3) {
+      left: 0%;
+      top: 30%;
+    }
+
+    .stripe:nth-child(4) {
+      left: 70%;
+      top: 0%;
+    }
+
+    .stripe:nth-child(5) {
+      left: 90%;
+      top: 50%;
+    }
