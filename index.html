@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Главная</title>
+  <link rel="stylesheet" href="./ccs/css.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <header class="header">
+    <div class="header-bg">
+      <img src="./image/i.png" alt="Header Background" class="header-bg-image">
+    </div>
+    <div class="header-content">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./image/image 20-fotor-bg-remover-20240610194530.png" alt="Logo" class="logo-image">
+        </a>
+        
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="./pages/the survey.html" class="nav-link">Опрос</a></li>
+          <li class="nav-item"><a href="./pages/about us.html" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="./pages/activity.html" class="nav-link">Деятельность</a></li>
+          <li class="nav-item"><a href="./pages/staff.html" class="nav-link">Сотрудники</a></li>
+          <li class="nav-item"><a href="./pages/career.html" class="nav-link">Вакансии</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <a href="./php/vxod.php" class="user-action-link">
+          <img src="./image/vxod.png" alt="User Icon" class="user-action-icon">
+        </a>
+      </div>
+    </div>
+    <div class="header-text">
+      <h2 class="header-title">О нас</h2>
+      <p class="header-description">Акционерное общество «Протон - Пермские моторы» является одним из крупнейших предприятий российской космической отрасли. <br>Мы специализируемся на выпуске мощных жидкостных ракетных двигателей для первых ступеней ракет космического назначения.</p>
+      <button onclick="scrollPageSmoothly(925)">Узнать больше</button>
+    </div>
+  </header>
+  
+
+  <section class="news-section">
+    <div class="news-container">
+      <h2 class="news-title">Новости</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <img src="./image/jer.jpeg" alt="Новость 1" class="news-image">
+          <div class="news-content">
+            <h3 class="news-item-title">Новый рекорд</h3>
+            <p class="news-item-description">Завод разработал самый мощный и экологически чистый двигатель для ракет</p>
+            <a href="#" class="news-item-link" data-modal-target="#news-modal-1">Читать далее</a>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="./image/now.jpg" alt="Новость 2" class="news-image">
+          <div class="news-content">
+            <h3 class="news-item-title">Инновационные технологии</h3>
+            <p class="news-item-description">Завод представил уникальный двигатель для самолетов, обеспечивающий экономию топлива и повышенную эффективность полетов</p>
+            <a href="#" class="news-item-link" data-modal-target="#news-modal-2">Читать далее</a>
+          </div>
+        </div>
+        <div class="news-item">
+          <img src="./image/nov.jpg" alt="Новость 3" class="news-image">
+          <div class="news-content">
+            <h3 class="news-item-title">Грандиозный проект</h3>
+            <p class="news-item-description">Завод начинает работу над разработкой нового поколения гибридного двигателя для воздушных судов, объединяющего преимущества электрической и традиционной тяги</p>
+            <a href="#" class="news-item-link" data-modal-target="#news-modal-3">Читать далее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="modal" id="news-modal-1">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Новый рекорд</h2>
+      <p>Завод разработал самый мощный и экологически чистый двигатель для ракет"
+        Научно-технический завод представил мощный и экологически чистый двигатель для ракет, который установил новый рекорд в отрасли космических технологий. Этот двигатель обладает высокой тягой, что позволяет увеличить грузоподъемность ракет и сократить время доставки грузов в космос. Важным достижением является также снижение вредных выбросов в атмосферу, что делает этот двигатель экологически более безопасным.</p>
+    </div>
+  </div>
+  
+  <div class="modal" id="news-modal-2">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Инновационные технологии</h2>
+      <p>Завод представил уникальный двигатель для самолетов, обеспечивающий экономию топлива и повышенную эффективность полетов"
+        Научно-технический завод анонсировал создание уникального двигателя для самолетов, который обещает революционизировать авиационную отрасль. Этот двигатель обеспечивает значительную экономию топлива и повышенную эффективность полетов благодаря инновационным технологиям, таким как улучшенная система сгорания или более эффективное использование тяги.</p>
+    </div>
+  </div>
+  
+  <div class="modal" id="news-modal-3">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Грандиозный проект</h2>
+      <p> Завод начинает работу над разработкой нового поколения гибридного двигателя для воздушных судов, объединяющего преимущества электрической и традиционной тяги"
+        Научно-технический завод анонсировал начало работы над разработкой нового поколения гибридного двигателя для воздушных судов. Этот двигатель будет объединять преимущества электрической и традиционной тяги, что позволит значительно снизить выбросы загрязняющих веществ и шум, а также повысить экономичность полетов. Этот проект обещает стать значимым шагом в развитии экологически чистых технологий в авиации.</p>
+    </div>
+  </div>
+  
+
+
+
+  <section class="activity-section">
+    <div class="activity-container">
+      <h2 class="activity-title">Деятельность</h2>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img src="./image/rak.jpg" alt="Слайд 1" class="slide-image">
+          </div>
+          <div class="slide">
+            <img src="./image/rrak.jpeg" alt="Слайд 2" class="slide-image">
+          </div>
+          <div class="slide">
+            <img src="./image/rrrak.jpeg" alt="Слайд 3" class="slide-image">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div class="container">
+    <h2 class="section-title">События</h2>
+    <div class="rectangle left" data-width="70" data-height="5">
+      <div class="rectangle-content">
+        <h3 class="rectangle-title">Иванов Иван Иванович: 15.06.23 (10:00)</h3>
+        <p class="rectangle-text">
+          Уважаемые коллеги! Доступ к информационной системе «Консультант Плюс» восстановлен.</p>
+      </div>
+    </div>
+    <div class="rectangle right" data-width="70" data-height="20">
+      <div class="rectangle-content">
+        <h3 class="rectangle-title">Петрова Мария Сергеевна: 12.06.23 (14:30)</h3>
+        <p class="rectangle-text">
+          Добрый день! В рамках конкурса "Звезды Протона" 31 мая в ДК Калинина состоится интерактив "Устами младенца". Ищем сотрудников, кто хотел бы и сможет записать своих детей 6-8 лет на видео, объясняющих 10 слов. Обязательно наличие у родителя аккаунта в Telegram.  О своем желании поучаствовать прошу связаться с организатором – Иванова Ирина Игоревна, тел. 2412-12-55.</p>
+      </div>
+    </div>
+    <div class="rectangle left" data-width="70" data-height="2">
+      <div class="rectangle-content">
+        <h3 class="rectangle-title">Сидоров Алексей Михайлович: 03.06.23 (9:15)</h3>
+        <p class="rectangle-text">
+          В механический цех требуются:<br>
+          Токарь - не ниже 4 разряда<br>
+          Фрезеровщик<br>
+          Диспетчер - работа по графику<br>
+          Обращаться к инспектору по персоналу Ирине Андреевне по тел. 73-097 или в отдел кадров по тел. 240-02-77.</p>
+      </div>
+    </div>
+    <div class="rectangle right" data-width="70" data-height="20">
+      <div class="rectangle-content">
+        <h3 class="rectangle-title">Козлова Екатерина Андреевна: 01.06.23 (20:00)</h3>
+        <p class="rectangle-text">
+          Внимание!
+          Совсем скоро, 31 мая, в ДК Калинина (ул. Куйбышева, 140) состоится конкурс талантов «Звезды Протона»!
+          В программе почти 20 номеров в номинациях: вокал, танцы, оригинальный жанр, поэзия, диджитал, которые исполнят сотрудники предприятия и их дети.
+          Начало концерта – в 16:30. Продолжительность мероприятия – до 19:00. Вход свободный, без билетов. Будет работать буфет.
+          Ждем всех! Поддержите коллег, подарите себе отличное настроение!</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="./image/image 20-fotor-bg-remover-20240610194530.png" alt="Logo">
+      </div>
+      <div class="footer-center">
+        <a href="./pages/the survey.html">Опрос</a>
+        <a href="./pages/about us.html">О Нас</a>
+        <a href="./pages/activity.html">Деятельность</a>
+        <a href="./pages/staff.html">Сотрудники</a>
+        <a href="./pages/career.html">Вакансии</a>
+      </div>
+      <div class="footer-right">
+    <div class="stripe" style="width: 10px;"></div>
+    <div class="stripe" style="width: 40px; left: 82%;"></div>
+    <div class="stripe" style="width: 40px; left: 85%; top: 0%;"></div>
+    <div class="stripe" style="width: 40px; left: 88%; top: 0%;"></div>
+    <div class="stripe" style="width: 196px; left: 91%; top: 0%;"></div>
+  </footer>
+  
+  
+  <script src="./script/js.js"></script>
