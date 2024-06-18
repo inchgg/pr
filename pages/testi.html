@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color:  #114490;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color:  #114490;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Тест техника безопасности</h1>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. Что такое техника безопасности на предприятии?</p>
+        <label><input type="radio" name="q1" value="a"> Правила поведения работников на рабочем месте.</label><br>
+        <label><input type="radio" name="q1" value="b"> Комплекс мероприятий, направленных на предотвращение несчастных случаев и аварий.</label><br>
+        <label><input type="radio" name="q1" value="c"> Система контроля за соблюдением правил охраны труда.</label><br>
+        <label><input type="radio" name="q1" value="d"> Все вышеперечисленное</label><br>
+    </div>
+
+    <div class="question">
+        <p>2. Какие виды инструктажа проводятся на предприятии?</p>
+        <label><input type="radio" name="q2" value="a"> Вводный, первичный, повторный, внеплановый и целевой.</label><br>
+        <label><input type="radio" name="q2" value="b"> Вводный, первичный, внеплановый и целевой.</label><br>
+        <label><input type="radio" name="q2" value="c"> Вводный, первичный, внеплановый и специальный.</label><br>
+    </div>
+
+    <div class="question">
+        <p>3. Что такое средства индивидуальной защиты?</p>
+        <label><input type="radio" name="q3" value="a"> Одежда, обувь и другие приспособления, защищающие работника от вредных воздействий.</label><br>
+        <label><input type="radio" name="q3" value="b"> Средства коллективной защиты.</label><br>
+        <label><input type="radio" name="q3" value="c"> Средства индивидуальной защиты не применяются на предприятиях.</label><br>
+    </div>
+
+    <div class="question">
+      <p>4. Какие требования предъявляются к освещению рабочих мест?</p>
+      <label><input type="radio" name="q4" value="a">  Достаточная освещенность, равномерность и отсутствие слепящего действия.</label><br>
+      <label><input type="radio" name="q4" value="b"> Достаточная освещенность и отсутствие мерцания.</label><br>
+      <label><input type="radio" name="q4" value="c">  Равномерность и отсутствие мерцания.</label><br>
+  </div>
+
+  <div class="question">
+  <p>5. Какие меры необходимо предпринять при обнаружении неисправности оборудования?</p>
+  <label><input type="radio" name="q5" value="a"> а) Немедленно сообщить руководителю и продолжить работу.</label><br>
+  <label><input type="radio" name="q5" value="b"> б) Самостоятельно устранить неисправность и продолжить работу.</label><br>
+  <label><input type="radio" name="q5" value="c"> в) Сообщить руководителю и дождаться его указаний.</label><br>
+  <label><input type="radio" name="q5" value="d"> г) Немедленно прекратить работу и сообщить руководителю.</label><br>
+</div>
+
+<div class="question">
+<p>6. Что такое электробезопасность?</p>
+<label><input type="radio" name="q6" value="a"> а) Комплекс мероприятий, направленных на защиту от поражения электрическим током.</label><br>
+<label><input type="radio" name="q6" value="b"> б) Система организационных и технических мероприятий и средств, обеспечивающих защиту людей от вредного и опасного воздействия электрического тока.</label><br>
+<label><input type="radio" name="q6" value="c"> в) Все вышеперечисленное.</label><br>
+<label><input type="radio" name="q6" value="d"> г) Мероприятия по обеспечению пожарной безопасности.</label><br>
+</div>
+
+<div class="question">
+<p>7. Какие виды инструктажей проводятся на предприятии?</p>
+<label><input type="radio" name="q7" value="a"> а) Вводный, первичный, повторный, внеплановый и целевой.</label><br>
+<label><input type="radio" name="q7" value="b"> б) Вводный, первичный, внеплановый и текущий.</label><br>
+<label><input type="radio" name="q7" value="c"> в) Вводный, первичный, внеплановый и специальный.</label><br>
+<label><input type="radio" name="q7" value="d"> г) Вводный, первичный, внеплановый и целевой.</label><br>
+</div>
+<div class="question">
+  <p>8. Что такое средства коллективной защиты?</p>
+  <label><input type="radio" name="q8" value="a"> а) Оборудование и приспособления, предназначенные для защиты работников от вредных воздействий.</label><br>
+  <label><input type="radio" name="q8" value="b"> б) Средства индивидуальной защиты.</label><br>
+  <label><input type="radio" name="q8" value="c"> в) Все вышеперечисленное.</label><br>
+  <label><input type="radio" name="q8" value="d"> г) Средства коллективной защиты не применяются на предприятиях.</label><br>
+</div>
+
+<div class="question">
+  <p>9. Какие требования предъявляются к вентиляции рабочих мест?</p>
+  <label><input type="radio" name="q9" value="a"> а) Обеспечение достаточного воздухообмена и удаление вредных веществ.</label><br>
+  <label><input type="radio" name="q9" value="b"> б) Обеспечение притока свежего воздуха и удаление загрязненного.</label><br>
+  <label><input type="radio" name="q9" value="c"> в) Все вышеперечисленные требования.</label><br>
+  <label><input type="radio" name="q9" value="d"> г) Требования к вентиляции рабочих мест не регламентируются.</label><br>
+</div>
+
+<div class="question">
+  <p>10. Какие меры необходимо предпринять при возникновении пожара на предприятии?</p>
+  <label><input type="radio" name="q10" value="a"> а) Немедленно сообщить в пожарную охрану и приступить к тушению пожара самостоятельно.</label><br>
+  <label><input type="radio" name="q10" value="b"> б) Немедленно сообщить в пожарную охрану и покинуть помещение.</label><br>
+  <label><input type="radio" name="q10" value="c"> в) Сообщить руководителю и дождаться его указаний.</label><br>
+  <label><input type="radio" name="q10" value="d"> г) Немедленно прекратить работу и приступить к тушению пожара самостоятельно.</label><br>
+</div>
+
+<div class="question">
+  <p>11. Что относится к средствам коллективной защиты?</p>
+  <label><input type="radio" name="q11" value="a"> а) Огнетушители, противопожарные щиты, системы вентиляции.</label><br>
+  <label><input type="radio" name="q11" value="b"> б) Спецодежда, средства защиты органов слуха и зрения.</label><br>
+  <label><input type="radio" name="q11" value="c"> в) Ограждения, блокировки, предупредительные сигналы.</label><br>
+  <label><input type="radio" name="q11" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>12. Какие требования предъявляются к микроклимату на рабочем месте?</p>
+  <label><input type="radio" name="q12" value="a"> а) Оптимальная температура, влажность и скорость движения воздуха.</label><br>
+  <label><input type="radio" name="q12" value="b"> б) Допустимые параметры температуры и влажности воздуха.</label><br>
+  <label><input type="radio" name="q12" value="c"> в) Поддержание комфортной температуры в помещении.</label><br>
+  <label><input type="radio" name="q12" value="d"> г) Микроклимат на рабочем месте не регламентируется.</label><br>
+</div>
+
+<div class="question">
+  <p>13. Что является источником электрической опасности на производстве?</p>
+  <label><input type="radio" name="q13" value="a"> а) Токонесущие части электрооборудования.</label><br>
+  <label><input type="radio" name="q13" value="b"> б) Нагревательные приборы и освещение.</label><br>
+  <label><input type="radio" name="q13" value="c"> в) Заземленные металлические конструкции.</label><br>
+  <label><input type="radio" name="q13" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>14. Что необходимо сделать при обнаружении утечки газа на рабочем месте?</p>
+  <label><input type="radio" name="q14" value="a"> а) Немедленно сообщить руководителю.</label><br>
+  <label><input type="radio" name="q14" value="b"> б) Открыть окна для проветривания.</label><br>
+  <label><input type="radio" name="q14" value="c"> в) Прекратить работу и покинуть помещение.</label><br>
+  <label><input type="radio" name="q14" value="d"> г) Все вышеперечисленные действия.</label><br>
+</div>
+
+
+<div class="question">
+  <p>15. Что относится к средствам индивидуальной защиты?</p>
+  <label><input type="radio" name="q15" value="a"> а) Спецодежда, обувь, перчатки, защитные очки.</label><br>
+  <label><input type="radio" name="q15" value="b"> б) Ограждения, блокировки, предупредительные сигналы.</label><br>
+  <label><input type="radio" name="q15" value="c"> в) Системы вентиляции и кондиционирования.</label><br>
+  <label><input type="radio" name="q15" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>16. Какие последствия может повлечь за собой нарушение техники безопасности?</p>
+  <label><input type="radio" name="q16" value="a"> а) Временная нетрудоспособность работника.</label><br>
+  <label><input type="radio" name="q16" value="b"> б) Тяжелые травмы или гибель работника.</label><br>
+  <label><input type="radio" name="q16" value="c"> в) Остановка производственного процесса.</label><br>
+  <label><input type="radio" name="q16" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>17. Что такое производственная санитария?</p>
+  <label><input type="radio" name="q17" value="a"> а) Система организационных, гигиенических и санитарно-технических мероприятий, направленных на предупреждение воздействия на работников вредных производственных факторов.</label><br>
+  <label><input type="radio" name="q17" value="b"> б) Комплекс мер, направленных на обеспечение безопасных условий труда.</label><br>
+  <label><input type="radio" name="q17" value="c"> в) Система норм и правил, обеспечивающих санитарно-гигиенические условия на производстве.</label><br>
+  <label><input type="radio" name="q17" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>18. Что такое пожарная безопасность?</p>
+  <label><input type="radio" name="q18" value="a"> а) Комплекс мероприятий, направленных на предупреждение возникновения пожаров и обеспечение их тушения.</label><br>
+  <label><input type="radio" name="q18" value="b"> б) Система средств и мер, направленных на защиту людей и имущества от огня.</label><br>
+  <label><input type="radio" name="q18" value="c"> в) Нормы и правила, регламентирующие порядок действий при возникновении пожара.</label><br>
+  <label><input type="radio" name="q18" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>19. Что входит в систему противопожарной защиты?</p>
+  <label><input type="radio" name="q19" value="a"> а) Автоматические средства обнаружения и тушения пожара.</label><br>
+  <label><input type="radio" name="q19" value="b"> б) Первичные средства пожаротушения и пожарная сигнализация.</label><br>
+  <label><input type="radio" name="q19" value="c"> в) Эвакуационные пути и запасные выходы.</label><br>
+  <label><input type="radio" name="q19" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>20. Что необходимо сделать при возникновении пожара?</p>
+  <label><input type="radio" name="q20" value="a"> а) Немедленно приступить к тушению пожара.</label><br>
+  <label><input type="radio" name="q20" value="b"> б) Эвакуировать людей и сообщить в пожарную охрану.</label><br>
+  <label><input type="radio" name="q20" value="c"> в) Организовать тушение пожара подручными средствами.</label><br>
+  <label><input type="radio" name="q20" value="d"> г) Все вышеперечисленные действия.</label><br>
+</div>
+<div class="question">
+  <p>21. Каким образом осуществляется контроль за соблюдением требований охраны труда?</p>
+  <label><input type="radio" name="q21" value="a"> а) Руководитель проводит периодические проверки.</label><br>
+  <label><input type="radio" name="q21" value="b"> б) Госинспекция труда осуществляет надзор и контроль.</label><br>
+  <label><input type="radio" name="q21" value="c"> в) Работники самостоятельно следят за соблюдением норм.</label><br>
+  <label><input type="radio" name="q21" value="d"> г) Все вышеперечисленные меры применяются.</label><br>
+</div>
+
+<div class="question">
+  <p>22. Что входит в комплекс мер по обеспечению электробезопасности?</p>
+  <label><input type="radio" name="q22" value="a"> а) Заземление, зануление, изоляция токоведущих частей.</label><br>
+  <label><input type="radio" name="q22" value="b"> б) Применение средств индивидуальной защиты.</label><br>
+  <label><input type="radio" name="q22" value="c"> в) Организационные мероприятия по допуску к работам.</label><br>
+  <label><input type="radio" name="q22" value="d"> г) Все вышеперечисленные меры.</label><br>
+</div>
+
+<div class="question">
+  <p>23. Что является причиной производственного травматизма?</p>
+  <label><input type="radio" name="q23" value="a"> а) Неисправность оборудования.</label><br>
+  <label><input type="radio" name="q23" value="b"> б) Нарушение правил техники безопасности.</label><br>
+  <label><input type="radio" name="q23" value="c"> в) Отсутствие необходимых средств защиты.</label><br>
+  <label><input type="radio" name="q23" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>24. Что такое инструктаж по охране труда?</p>
+  <label><input type="radio" name="q24" value="a"> а) Устное ознакомление работников с правилами безопасности.</label><br>
+  <label><input type="radio" name="q24" value="b"> б) Теоретическая подготовка по вопросам охраны труда.</label><br>
+  <label><input type="radio" name="q24" value="c"> в) Практическое обучение безопасным приемам работы.</label><br>
+  <label><input type="radio" name="q24" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>25. Что относится к организационным мерам обеспечения безопасности?</p>
+  <label><input type="radio" name="q25" value="a"> а) Обучение и инструктаж работников.</label><br>
+  <label><input type="radio" name="q25" value="b"> б) Проведение медицинских осмотров.</label><br>
+  <label><input type="radio" name="q25" value="c"> в) Разработка инструкций по охране труда.</label><br>
+  <label><input type="radio" name="q25" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>26. Что является основной причиной возникновения пожаров на производстве?</p>
+  <label><input type="radio" name="q26" value="a"> а) Неисправность электрооборудования.</label><br>
+  <label><input type="radio" name="q26" value="b"> б) Нарушение правил противопожарной безопасности.</label><br>
+  <label><input type="radio" name="q26" value="c"> в) Самовозгорание легковоспламеняющихся веществ.</label><br>
+  <label><input type="radio" name="q26" value="d"> г) Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>27. Каким образом осуществляется оказание первой помощи при несчастном случае?</p>
+  <label><input type="radio" name="q27" value="a"> а) Силами работников, прошедших обучение.</label><br>
+  <label><input type="radio" name="q27" value="b"> б) Вызовом скорой медицинской помощи.</label><br>
+  <label><input type="radio" name="q27" value="c"> в) Транспортировкой пострадавшего в медицинское учреждение.</label><br>
+  <label><input type="radio" name="q27" value="d"> г) Всеми вышеперечисленными способами.</label><br>
+</div>
+
+<div class="question">
+  <p>28. Что является основным фактором, влияющим на безопасность труда?</p>
+  <label><input type="radio" name="q28" value="a"> а) Состояние технологического оборудования.</label><br>
+  <label><input type="radio" name="q28" value="b"> б) Организация рабочих мест.</label><br>
+  <label><input type="radio" name="q28" value="c"> в) Квалификация и ответственность работников.</label><br>
+  <label><input type="radio" name="q28" value="d"> Все вышеперечисленные факторы.</label><br>
+</div>
+
+<div class="question">
+  <p>29. Какая информация должна содержаться в инструкции по охране труда?</p>
+  <label><input type="radio" name="q29" value="a">  Требования безопасности перед началом работы.</label><br>
+  <label><input type="radio" name="q29" value="b">  Требования безопасности во время работы.</label><br>
+  <label><input type="radio" name="q29" value="c">  Действия при аварийных ситуациях.</label><br>
+  <label><input type="radio" name="q29" value="d">  Все вышеперечисленное.</label><br>
+</div>
+
+<div class="question">
+  <p>30. Что относится к средствам индивидуальной защиты?</p>
+  <label><input type="radio" name="q30" value="a">  пецодежда, обувь, очки, респираторы.</label><br>
+  <label><input type="radio" name="q30" value="b"> Ограждения, блокировки, предупредительные сигналы.</label><br>
+  <label><input type="radio" name="q30" value="c">  Системы вентиляции и освещения.</label><br>
+  <label><input type="radio" name="q30" value="d">  Все вышеперечисленное.</label><br>
+</div>
+
+
+
+
+        <input type="submit" value="Проверить ответы">
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы
+            
+            // Проверка ответов
+            var correctAnswers = ["d", "a", "a","b","b", "c", "a","a","c", "b", "d","a","a", "d", "a","d", "a", "d","d","d", "b", "d","d","d", "d", "d","d","d", "d", "a"];
+            var userAnswers = [
+            document.querySelector('input[name="q1"]:checked').value,
+                document.querySelector('input[name="q2"]:checked').value,
+                document.querySelector('input[name="q3"]:checked').value,
+                document.querySelector('input[name="q4"]:checked').value,
+                document.querySelector('input[name="q5"]:checked').value,
+                document.querySelector('input[name="q6"]:checked').value,
+                document.querySelector('input[name="q7"]:checked').value,
+                document.querySelector('input[name="q8"]:checked').value,
+                document.querySelector('input[name="q9"]:checked').value,
+                document.querySelector('input[name="q10"]:checked').value,
+                document.querySelector('input[name="q11"]:checked').value,
+                document.querySelector('input[name="q12"]:checked').value,
+                document.querySelector('input[name="q13"]:checked').value,
+                document.querySelector('input[name="q14"]:checked').value,
+                document.querySelector('input[name="q15"]:checked').value,
+                document.querySelector('input[name="q16"]:checked').value,
+                document.querySelector('input[name="q17"]:checked').value,
+                document.querySelector('input[name="q18"]:checked').value,
+                document.querySelector('input[name="q19"]:checked').value,
+                document.querySelector('input[name="q20"]:checked').value,
+                document.querySelector('input[name="q21"]:checked').value,
+                document.querySelector('input[name="q22"]:checked').value,
+                document.querySelector('input[name="q23"]:checked').value,
+                document.querySelector('input[name="q24"]:checked').value,
+                document.querySelector('input[name="q25"]:checked').value,
+                document.querySelector('input[name="q26"]:checked').value,
+                document.querySelector('input[name="q27"]:checked').value,
+                document.querySelector('input[name="q28"]:checked').value,
+                document.querySelector('input[name="q29"]:checked').value,
+                document.querySelector('input[name="q30"]:checked').value
+            ];
+
+            var results = document.getElementById('results');
+            var score = 0;
+            var output = "<h2>Результаты:</h2><ul>";
+
+            for (var i = 0; i < correctAnswers.length; i++) {
+                if (userAnswers[i] === correctAnswers[i]) {
+                    output += "<li>Вопрос " + (i + 1) + ": Правильно!</li>";
+                    score++;
+                } else {
+                    output += "<li>Вопрос " + (i + 1) + ": Неправильно.</li>";
+                }
+            }
+
+            output += "</ul><p>Правильных ответов: " + score + " из " + correctAnswers.length + "</p>";
+            results.innerHTML = output;
+        });
+    </script>
+</body>
+</html>

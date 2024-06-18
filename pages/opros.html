@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест и опрос</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 15px;
+            background-color: #ddd;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            border-radius: 8px;
+        }
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #114490;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #114490;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .value {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #114490;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #114490;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Опрос "Отношение к предприятию"</h1>
+
+    <form id="quizForm">
+       
+        <div class="question">
+            <p>1. Я успешно справляюсь с текущей загрузкой на работе</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q5">
+            <div class="value"><span id="q5-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>2. Предприятие обеспечивает безопасность труда для моей жизни и здоровья</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q6">
+            <div class="value"><span id="q6-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>3. У меня в целом комфортные условия труда на рабочем месте (достаточно освещения, невысокий уровень шума и комфортная температура)</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q7">
+            <div class="value"><span id="q7-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>4. Меня устраивает спецодежда, спецобувь и другие средства индивидуальной защиты</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q8">
+            <div class="value"><span id="q8-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>5. Меня устраивает оснащенность бытовых помещений (бытовок, туалетов, зон отдыха и т.д.)</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q9">
+            <div class="value"><span id="q9-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>6. У меня есть все необходимые материалы и инструменты для работы</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q10">
+            <div class="value"><span id="q10-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>7. Меня устраивает мой график работы</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q11">
+            <div class="value"><span id="q11-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>8. Заработная плата на нашем предприятии выплачивается вовремя и в полном объеме</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q12">
+            <div class="value"><span id="q12-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>9. Меня удовлетворяет используемая на предприятии система оплаты труда</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q13">
+            <div class="value"><span id="q13-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>10. Меня устраивает размер получаемой заработной платы на предприятии</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q14">
+            <div class="value"><span id="q14-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>11. Я понимаю из чего состоит моя заработная плата и что влияет на каждую из ее составляющих</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q15">
+            <div class="value"><span id="q15-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>12. Результаты моей работы значительно влияют на размер моей заработной платы</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q16">
+            <div class="value"><span id="q16-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>13. Наше предприятие мотивирует меня достигать большего, чем необходимо для формального выполнения моих обязанностей</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q17">
+            <div class="value"><span id="q17-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>14. Я доверяю решениям, которые принимает высшее руководство предприятия</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q18">
+            <div class="value"><span id="q18-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>15.В нашей компании возможно открытое обсуждение с высшим руководством проблем и сложных вопросов </p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q8">
+            <div class="value"><span id="q8-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>16. Я доверяю квалификации и профессионализму моего непосредственного руководителя </p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q9">
+            <div class="value"><span id="q9-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>17. Мой непосредственный руководитель ставит ясные и понятные задачи</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q10">
+            <div class="value"><span id="q10-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>18. Я регулярно и своевременно получаю обратную связь о результатах своего труда</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q11">
+            <div class="value"><span id="q11-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>19. Мой непосредственный руководитель ценит мои заслуги и отмечает успехи</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q12">
+            <div class="value"><span id="q12-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>20. В нашем подразделении принято открыто обсуждать проблемы и сложности, которые возникают в ходе работы, и принимать коллегиальные решения </p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q13">
+            <div class="value"><span id="q13-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>21. Я участвую в принятии решений по задачам, которые выполняю</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q14">
+            <div class="value"><span id="q14-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>22. Я чувствую себя членом эффективной команды </p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q15">
+            <div class="value"><span id="q15-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>23.В моем коллективе создана атмосфера доверительных, открытых и уважительных отношений</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q16">
+            <div class="value"><span id="q16-value">3</span></div>
+        </div>
+
+        <div class="question">
+            <p>24. Я успешно разрешаю сложные, конфликтные ситуации на работе</p>
+            <input type="range" min="1" max="5" value="3" class="slider" id="q17">
+            <div class="value"><span id="q17-value">3</span></div>
+        </div>
+
+     
+
+        <input type="submit" value="Отправить">
+    </form>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Спасибо что прошли тестирование и опрос!</h2>
+           
+        </div>
+    </div>
+
+    <script>
+        const quizForm = document.getElementById("quizForm");
+        const modal = document.getElementById("myModal");
+
+        // Обновляем значение в реальном времени
+        const sliders = document.querySelectorAll(".slider");
+        sliders.forEach(slider => {
+            slider.addEventListener("input", function() {
+                const value = this.value;
+                this.nextElementSibling.querySelector("span").textContent = value;
+            });
+        });
+
+        quizForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

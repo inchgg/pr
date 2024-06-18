@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Деятельность</title>
+  <link rel="stylesheet" href="../ccs/activity.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <header class="header">
+    <div class="header-bg">
+      <img src="../image/iiii.png" alt="Header Background" class="header-bg-image">
+      <div class="header-text">
+        <h2 class="header-title">Деятельность</h2>
+        <p class="header-description">В космической отрасли АО «Протон-ПМ» занимает одну из лидирующих позиций по производству мощных жидкостных ракетных двигателей.</p>
+      
+      </div>
+    </div>
+    <div class="header-content">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../image/image 20-fotor-bg-remover-20240610194530.png" alt="Logo" class="logo-image">
+        </a>
+
+</div>
+<nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="./the survey.html" class="nav-link">Опрос</a></li>
+      <li class="nav-item"><a href="./about us.html" class="nav-link">О нас</a></li>
+      <li class="nav-item"><a href="./activity.html" class="nav-link">Деятельность</a></li>
+      <li class="nav-item"><a href="./staff.html" class="nav-link">Сотрудники</a></li>
+      <li class="nav-item"><a href="./career.html" class="nav-link">Вакансии</a></li>
+    </ul>
+  </nav>
+  <div class="user-actions">
+    <a href="../php/vxod.php" class="user-action-link">
+      <img src="../image/vxod.png" alt="User Icon" class="user-action-icon">
+    </a>
+  </div>
+</div>
+</header>
+
+
+
+
+
+<div class="container">
+  <div class="square" id="square1" data-title="Image 1" data-content="1. Компоненты газотурбинных агрегатов.
+
+
+
+  2. Компоненты авиационных двигателей
+  3. Тестирование газотурбинных агрегатов" data-image-src="../image/img2.png">
+    <img src="../image/img2.png" alt="Image 1">
+    <p>Продукция для авиации</p>
+  </div>
+  <div class="square" id="square2" data-title="Image 2" data-content="1. Изготовление литых заготовок     2. Металлообработка 3. Сварка 4.пайка." data-image-src="../image/img3-_1_.png">
+    <img src="../image/img3-_1_.png" alt="Image 2">
+    <p>Производственные услуги</p>
+  </div>
+  <div class="square" id="square3" data-title="Image 3" data-content="1. Ключевые компоненты двигателя РД-191 для ракетно-космических систем семейства «Ангара»
+
+  2. Инновационные решения в двигателе РД-276 для ракеты-носителя «Протон-М»
+  
+  3. Передовые технологии в агрегатах и системах ракетных двигателей»." data-image-src="../image/dvig.png">
+    <img src="../image/dvig.png" alt="Image 3">
+    <p>Ракетные двигатели</p>
+  </div>
+</div>
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <div class="popup-image">
+      <img src="" alt="Popup Image">
+    </div>
+    <div class="popup-text">
+      <p></p>
+    </div>
+    <span class="close-button">&times;</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../image/image 20-fotor-bg-remover-20240610194530.png" alt="Logo">
+    </div>
+    <div class="footer-center">
+      <a href="./the survey.html">Опрос</a>
+      <a href="./about us.html">О Нас</a>
+      <a href="./activity.html">Деятельность</a>
+      <a href="./staff.html">Сотрудники</a>
+      <a href="./career.html">Вакансии</a>
+    </div>
+    <div class="footer-right">
+  <div class="stripe" style="width: 10px;"></div>
+  <div class="stripe" style="width: 40px; left: 82%;"></div>
+  <div class="stripe" style="width: 40px; left: 85%; top: 0%;"></div>
+  <div class="stripe" style="width: 40px; left: 88%; top: 0%;"></div>
+  <div class="stripe" style="width: 196px; left: 91%; top: 0%;"></div>
+</footer>
+
+<script>
+const squares = document.querySelectorAll('.square');
+const popup = document.getElementById('popup');
+const popupImage = popup.querySelector('.popup-image img');
+const popupText = popup.querySelector('.popup-text p');
+
+squares.forEach(square => {
+  square.addEventListener('click', () => {
+    const title = square.dataset.title;
+    const content = square.dataset.content;
+    const imageSrc = square.dataset.imageSrc;
+
+    popupText.textContent = content;
+    popupImage.src = imageSrc;
+
+    popup.style.display = 'block';
+  });
+});
+
+popup.querySelector('.close-button').addEventListener('click', () => {
+  popup.style.display = 'none';
+});
+
+
+  </script>
